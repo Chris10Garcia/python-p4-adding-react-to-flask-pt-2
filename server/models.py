@@ -3,7 +3,8 @@ from sqlalchemy_serializer import SerializerMixin
 
 db = SQLAlchemy()
 
-class Movie(db.Model, SerializerMixin):
+# class Movie(db.Model, SerializerMixin):
+class Movie(db.Model):
     __tablename__ = 'movies'
 
     id = db.Column(db.Integer, primary_key=True)
